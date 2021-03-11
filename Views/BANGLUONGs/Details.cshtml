@@ -1,0 +1,59 @@
+﻿@model _1721050522_Trinh_Thu_Huong_BTL_LTQL.Models.BANGLUONG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BANGLUONG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeSoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeSoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BacLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BacLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayThanhToan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThanhToan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNhanVien }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

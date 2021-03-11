@@ -1,0 +1,40 @@
+﻿@model IEnumerable<_1721050522_Trinh_Thu_Huong_BTL_LTQL.Models.TRINHDO_NGOAINGU>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaTrinhDoNN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTrinhDo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaTrinhDoNN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenTrinhDo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaTrinhDo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaTrinhDo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaTrinhDo })
+        </td>
+    </tr>
+}
+
+</table>

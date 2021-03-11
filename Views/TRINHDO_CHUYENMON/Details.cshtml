@@ -1,0 +1,43 @@
+﻿@model _1721050522_Trinh_Thu_Huong_BTL_LTQL.Models.TRINHDO_CHUYENMON
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TRINHDO_CHUYENMON</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.STT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaTrinhDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaTrinhDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaCM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

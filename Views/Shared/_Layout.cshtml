@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Nhân viên", "Index", "NHANVIENs")</li>
+                    <li>@Html.ActionLink("Chức vụ", "Index", "CHUCVUs")</li>
+                    <li>@Html.ActionLink("Phòng ban", "Index", "PHONGBANs")</li>
+                    <li>@Html.ActionLink("Chức vụ", "Index", "CHUCVUs")</li>
+                    <li>@Html.ActionLink("Dự án", "Index", "DUANs")</li>
+                    <li>@Html.ActionLink("Chi tiết dự án", "Index", "CHITIETDUANs")</li>
+                    <li>@Html.ActionLink("Chuyên môn", "Index", "CHUYENMONs")</li>
+                    <li>@Html.ActionLink("Công tác", "Index", "CONGTACs")</li>
+                    <li>@Html.ActionLink("Trình độ", "Index", "TRINHDOs")</li>
+                    <li>@Html.ActionLink("Trình độ CM", "Index", "TRINHDO_CHUYENMONs")</li>
+                    <li>@Html.ActionLink("Trình độ NN", "Index", "TRINHDO_NGOAINGUs")</li>
+                    <li>@Html.ActionLink("Bảng CC", "Index", "BANGCHAMCONGs")</li>
+                    <li>@Html.ActionLink("Bảng lương", "Index", "BANGLUONGs")</li>
+                    <li>@Html.ActionLink("Khen thưởng - kỷ luật", "Index", "CHITIETKHENTHUONG_KYLUATs")</li>
+                    <li>@Html.ActionLink("Đăng xuất", "Logoff", "Account")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

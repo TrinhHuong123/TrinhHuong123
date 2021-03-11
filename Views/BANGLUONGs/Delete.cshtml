@@ -1,0 +1,65 @@
+﻿@model _1721050522_Trinh_Thu_Huong_BTL_LTQL.Models.BANGLUONG
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BANGLUONG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNhanVien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhanVien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeSoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeSoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BacLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BacLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayThanhToan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThanhToan)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

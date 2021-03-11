@@ -1,0 +1,59 @@
+﻿@model _1721050522_Trinh_Thu_Huong_BTL_LTQL.Models.CONGTAC
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CONGTAC</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MaCT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CongViec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CongViec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChucVu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhongBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhongBan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoiLamViec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoiLamViec)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
